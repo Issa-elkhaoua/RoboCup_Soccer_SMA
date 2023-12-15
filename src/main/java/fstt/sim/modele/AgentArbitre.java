@@ -109,10 +109,13 @@ public class AgentArbitre extends GameObject {
             sb.append("0");
         sb.append(secondes);
         sb.append("]");
-        // Définition de la couleur et affichage du texte.
-        g.setColor(Color.RED);
+        // Définition de la couleur et affichage du texte en noir et en gras, avec une taille de police de 15.
+        g.setColor(Color.BLACK);
+        Font font = new Font("Arial", Font.BOLD, 15);
+        g.setFont(font);
         g.drawString(sb.toString(), 20, 20);
     }
+
 
     // Méthode pour incrémenter le score de l'équipe spécifiée.
     public void inscrireBut(int numeroEquipe) {
